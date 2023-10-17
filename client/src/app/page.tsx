@@ -26,7 +26,7 @@ export default function Page() {
 
   useEffect(() => {
     if(username.length === 0) return;
-    const socket = io('http://localhost:3005');
+    const socket = io('http://chatapp-server-vert.vercel.app');
     setConnection(true);
     socket.emit('join', username);
     
