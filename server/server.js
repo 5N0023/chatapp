@@ -38,6 +38,7 @@ io.on('connection', (socket) => {
             messagesqueue.set(receiverId, messages);
         }
     });
+    
     socket.on('get-online-users', () => {
         socket.emit('online-users', [...connectedUsers.keys()]);
     });
@@ -62,5 +63,5 @@ io.on('connection', (socket) => {
 });
 
 server.listen(8080, () => {
-    console.log('Socket.IO server is running on port 3005');
+    console.log('Socket.IO server is running on port 8080');
 });
