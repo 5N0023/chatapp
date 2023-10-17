@@ -9,8 +9,5 @@
   ],
   "env": {
     "NODE_ENV": "production"
-  },
-  "server": {
-    "port": 8080 
   }
 }
